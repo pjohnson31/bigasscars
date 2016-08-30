@@ -19,6 +19,8 @@ a#kustomerContactButton:hover {
     color: #f66c2f;
     border-radius: 32px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -32,6 +34,7 @@ a#kustomerCollapseForm, a#kustomerCollapseForm:visited {
 
 
 #kustomerContact {
+  z-index: 31474830001;
   position:fixed;
   bottom:30px;
   right: 30px;
