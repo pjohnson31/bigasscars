@@ -99,7 +99,7 @@ a#kustomerCollapseForm, a#kustomerCollapseForm:visited {
 
 #kustomerContactForm {
   border-radius: 3px;
-  background: #F9F9F9;
+  background: #F7F7F7;
   padding: 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -190,7 +190,8 @@ fieldset {
 
 #kustomerContactFormContainer label.kustomerFormError {
   color: rgba(255, 0, 0, 0.69);
-  margin: -30px 0 5px 11px;
+  margin: -10px 10px 5px;
+  font-size: 10px;
   display: block;
   font-weight: 400;
 }
@@ -202,6 +203,18 @@ fieldset {
 #kustomerContactForm input:focus,
 #kustomerContactForm textarea:focus {
   outline: 0;
+}
+
+#kustomerFooter {
+  text-align: center;
+  color: #969696;
+  font-size: 8px;
+  letter-spacing: .75px;
+  max-height: 10px;
+}
+#footerDiv {
+  max-height: 10px;
+  margin: -10px 0px 5px;
 }
 
 ::-webkit-input-placeholder {

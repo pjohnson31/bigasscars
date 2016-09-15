@@ -43,6 +43,9 @@ var contactFormHTML = '<a onclick="toggleKustomerContactForm();return false;" cl
     <input placeholder="currPage" type="hidden" name="currPage" value="' + document.location.href + '"> \
     </fieldset> \
     </div> \
+    <a href="https://www.kustomer.com" id="kustomerFooter" target="_blank"> \
+      <div  id="footerDiv"> Powered by <b>KUSTOMER</b> </div> \
+    </a>\
   </form> \
 </div>';
 
