@@ -884,37 +884,11 @@
     <!-- Custom JavaScript -->
     <script src="assets/js/hallooou.js"></script>
     <script>
-  (function(window, document, kustomer, undefined) {
-    window.Kustomer = kustomer;
-    kustomer._q = [];
-    kustomer._i = [];
-    kustomer.init = function(API_KEY) {
-      function applyMethod(kustomer, methodName) {
-        kustomer[methodName] = function() {
-          kustomer._q.push(
-            [methodName].concat(Array.prototype.slice.call(arguments, 0))
-          )
-        }
-      }
-      var methods = "initialize identify track start".split(' ');
-      for (var i = 0; i < methods.length; i++) {
-        applyMethod(kustomer, methods[i]);
-      }
-      kustomer._i.push(API_KEY);
-    };
-
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.src = 'https://cdn.helpapp.io/cw/sdk.v1.min.js';
-    var element = document.getElementsByTagName("script")[0];
-    element.parentNode.insertBefore(script, element);
-  })(this, document, window.Kustomer || {});
+  window.intercomSettings = {
+    app_id: "cmkhf4as"
+  };
 </script>
-<script>
-  Kustomer.init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU3ZGMwYmNlODhlNTQyMTEwMDFhMzdlNSIsInVzZXIiOiI1N2RjMGJjZTBiMWE5NDExMDAzZWE1MWEiLCJvcmciOiI1N2RjMGFjNDE5OTQ5MzExMDA4MDVmMTkiLCJyb2xlcyI6WyJvcmcudXNlciIsIm9yZy5hZG1pbiJdLCJhdWQiOiJ1cm46Y29uc3VtZXIiLCJpc3MiOiJ1cm46YXBpIiwic3ViIjoiNTdkYzBiY2UwYjFhOTQxMTAwM2VhNTFhIn0.SvQJYp3pfLQkyYYcwhihTYOUU1dbl4zIrzxAdtHxQSM');
-  Kustomer.start();
-</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cmkhf4as';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 
 
 </body>
