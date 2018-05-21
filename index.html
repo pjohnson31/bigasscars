@@ -33,21 +33,25 @@
     if (queryParams.hasOwnProperty('lang')) {
       langOverride = queryParams["lang"];
     }
+    Kustomer.start();
 
-    if (langOverride) {
-      console.log('lang is', langOverride);
-      Kustomer.start({
-        new: true,
-        icon: true,
-        lang: langOverride
-      });
-    } else {
-      console.log('starting chat with default lang');
-      Kustomer.start({
-        new: true,
-        icon: true,
-      });
-    }
+    setTimeout(function() {
+      if (langOverride) {
+        console.log('lang is', langOverride);
+        Kustomer.start({
+          new: true,
+          icon: true,
+          lang: langOverride
+        });
+      } else {
+        console.log('starting chat with default lang');
+        Kustomer.start({
+          new: true,
+          icon: true,
+          lang: langOverride
+        });
+      }
+    }, 3000);
     </script>
 
     <script>
