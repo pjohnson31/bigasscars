@@ -4,55 +4,13 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="widget.js" data-width="200" data-height="200"></script>
-  <script>
-    ! function(a, b, c, d) {
-      a.Kustomer = c, c._q = [], c._i = [], c.init = function(a) {
-        function b(a, b) {
-          a[b] = function() {
-            a._q.push([b].concat(Array.prototype.slice.call(arguments, 0)))
-          }
-        }
-        for (var d = "init clear identify track start describe".split(" "), e = 0; e < d.length; e++) b(c, d[e]);
-        c._i.push(a)
-      };
-      var e = b.createElement("script");
-      e.type = "text/javascript", e.async = !0, e.src = "https://cdn.kustomerapp.com/cw/sdk.v1.min.js";
-      var f = b.getElementsByTagName("script")[0];
-      f.parentNode.insertBefore(e, f)
-    }(this, document, window.Kustomer || {});
+  <script>!function(a,b,c,d){a.Kustomer=c,c._q=[],c._i=[],c.init=function(a){function b(a,b){a[b]=function(){a._q.push([b].concat(Array.prototype.slice.call(arguments,0)))}}for(var d="init clear identify track start describe".split(" "),e=0;e<d.length;e++)b(c,d[e]);c._i.push(a)};var e=b.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.helpsimply.com/cw/sdk.v1.1.min.js";var f=b.getElementsByTagName("script")[0];f.parentNode.insertBefore(e,f)}(this,document,window.Kustomer||{});
 
-    // Add your API key here
-    Kustomer.init(
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNjM2NTdiYWY4ZTkwMDAxMDE0YzM2ZSIsInVzZXIiOiI1YjYzNjU3YjA2OWJhZjAwMTFiOTExYmQiLCJvcmciOiI1YjYwYmFjNDc0M2I4NTAwMTE3MDk3MWQiLCJvcmdOYW1lIjoibWVnYWRldGgiLCJ1c2VyVHlwZSI6Im1hY2hpbmUiLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjViNjM2NTdiMDY5YmFmMDAxMWI5MTFiZCJ9.MYggf7C1uv4Vb_eUH0RhLu9HkWo4WJl_UZhVVIHCk1k'
-    );
+// Add your API key here
+Kustomer.init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNjM2NTdiYWY4ZTkwMDAxMDE0YzM2ZSIsInVzZXIiOiI1YjYzNjU3YjA2OWJhZjAwMTFiOTExYmQiLCJvcmciOiI1YjYwYmFjNDc0M2I4NTAwMTE3MDk3MWQiLCJvcmdOYW1lIjoibWVnYWRldGgiLCJ1c2VyVHlwZSI6Im1hY2hpbmUiLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjViNjM2NTdiMDY5YmFmMDAxMWI5MTFiZCJ9.MYggf7C1uv4Vb_eUH0RhLu9HkWo4WJl_UZhVVIHCk1k');
 
-    // Start the chat client
-
-    var queryParams = $.getQueryParameters();
-    var langOverride = "";
-    if (queryParams.hasOwnProperty('lang')) {
-      langOverride = queryParams["lang"];
-    }
-    Kustomer.start();
-
-    setTimeout(function() {
-      if (langOverride) {
-        console.log('lang is', langOverride);
-        Kustomer.start({
-          new: true,
-          icon: true,
-          lang: langOverride
-        });
-      } else {
-        console.log('starting chat with default lang');
-        Kustomer.start({
-          new: true,
-          icon: true,
-          lang: langOverride
-        });
-      }
-    }, 3000);
-  </script>
+// Start the chat client
+Kustomer.start();</script>
   <script type="text/javascript">
   </script>
 
