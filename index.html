@@ -4,49 +4,18 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="widget.js" data-width="200" data-height="200"></script>
-  <script>!function(a,b,c,d){a.Kustomer=c,c._q=[],c._i=[],c.init=function(a){function b(a,b){a[b]=function(){a._q.push([b].concat(Array.prototype.slice.call(arguments,0)))}}for(var d="init clear identify track start describe".split(" "),e=0;e<d.length;e++)b(c,d[e]);c._i.push(a)};var e=b.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.helpsimply.com/cw/sdk.v1.1.min.js";var f=b.getElementsByTagName("script")[0];f.parentNode.insertBefore(e,f)}(this,document,window.Kustomer||{});
+  <script>!function(a,b,c,d){a.Kustomer=c,c._q=[],c._i=[],c.init=function(a){function b(a,b){a[b]=function(){a._q.push([b].concat(Array.prototype.slice.call(arguments,0)))}}for(var d="init clear identify track start describe".split(" "),e=0;e<d.length;e++)b(c,d[e]);c._i.push(a)};var e=b.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.kustomerapp.com/cw/sdk.v1.1.min.js";var f=b.getElementsByTagName("script")[0];f.parentNode.insertBefore(e,f)}(this,document,window.Kustomer||{});
 
 // Add your API key here
-Kustomer.init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNjM2NTdiYWY4ZTkwMDAxMDE0YzM2ZSIsInVzZXIiOiI1YjYzNjU3YjA2OWJhZjAwMTFiOTExYmQiLCJvcmciOiI1YjYwYmFjNDc0M2I4NTAwMTE3MDk3MWQiLCJvcmdOYW1lIjoibWVnYWRldGgiLCJ1c2VyVHlwZSI6Im1hY2hpbmUiLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjViNjM2NTdiMDY5YmFmMDAxMWI5MTFiZCJ9.MYggf7C1uv4Vb_eUH0RhLu9HkWo4WJl_UZhVVIHCk1k');
+Kustomer.init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViN2YyNTQyMzdlMDUyMDAxMWQ4MDhiYSIsInVzZXIiOiI1YjdmMjU0MmUyMDUyYjRjOTZlZTljNzciLCJvcmciOiI1YjdmMWQwOGE1MmNjOTgyYjVkNGEyMGEiLCJvcmdOYW1lIjoienp6LXJvdXRpbmctcHJvZHVjdGlvbi1ydW4tYXVnLTIzcmQiLCJ1c2VyVHlwZSI6Im1hY2hpbmUiLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjViN2YyNTQyZTIwNTJiNGM5NmVlOWM3NyJ9.XvNMbHSeyjOEDXY0eOzKSb4U0URbBo1W85CxwOGk-_E');
 
 // Start the chat client
 Kustomer.start();</script>
-  <script type="text/javascript">
-  </script>
-
-  <script type="text/javascript">
-    var roles = ["admin", "agent"];
-    var role = roles[Math.floor(Math.random() * roles.length)];
-    $(document).ready(function() {
-      $('.usertype').text(role);
-    });
-
-    var beamer_config = {
-      product_id: "VvUeddXg2783", //DO NOT CHANGE: This is your product code on Beamer
-      selector: ".beamerTrigger",
-      /*Optional: Id, class (or list of both) of the HTML element to use as a button*/
-      //display : "right", /*Optional: Side on which the Beamer panel will be shown in your site*/
-      //top: 0, /*Optional: Top position offset for the notification bubble*/
-      //right: 0, /*Optional: Right position offset for the notification bubble*/
-      //button_position: 'bottom-right', /*Optional: Position for the notification button that shows up when the selector parameter is not set*/
-      //language: 'EN', /*Optional: Bring news in the language of choice*/
-      filter: role,
-      //lazy: false, /*Optional : true if you want to manually start the script by calling Beamer.init()*/
-      //alert : false, /*Optional : false if you don't want to initialize the selector*/
-      //callback : your_callback_function, /*Optional : Beamer will call this function, with the number of new features as a parameter, after the initialization*/
-      //---------------Visitor Information---------------
-      //user_firstname : "firstname", /*Optional : input your user firstname for better statistics*/
-      //user_lastname : "lastname", /*Optional : input your user lastname for better statistics*/
-      //user_email : "email", /*Optional : input your user email for better statistics*/
-    };
-  </script>
-  <script type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js" defer="defer"></script>
 </head>
 
 <body>
-  This is a website.<br/><br/> you are viewing this page as if you're an <b><span class="usertype">...</span></b>
+  This is a website.
   <br/><br/>
-  <button class="beamerTrigger">What's New? </button>
 </body>
 
 </html>
